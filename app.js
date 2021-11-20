@@ -14,3 +14,9 @@ const chara = {
         'Vit' : undefined
     }
 }
+
+const randomStats = () => Math.floor(Math.random() * 20);
+
+const getRandomChara = (arr) => {
+    let num = Math.floor(Math.random() * arr.length);
+}
