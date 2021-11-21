@@ -3,8 +3,8 @@ const chara = {
     'weapon' : ['Sword', 'Claymore', 'Wand', 'Fist', 'Bow', 'Dual Dagger'],
     'magicElem' : ['Fire', 'Dark', 'Light', 'Heal', 'Ice', 'Lightning', 'Earth'],
     'passiveSkill' : ['Language Knowledge', 'Regeneration', 'Instant Learning', 'Luck', 'Enhanced Awareness', 'Enticing Charm', 'Fast Increase Growth', 'Survivalist'],
-    'activeSkill' : ['Omniscient', 'Appraisal', 'Duplicate', 'Teleportation', 'Skill Creation'],
-    'uniqueSkill' : ['Arise'],
+    'activeSkill' : ['Omniscient', 'Appraisal', 'Duplicate', 'Teleportation', 'Skill Creation', 'Alchemy'],
+    'uniqueSkill' : ['Arise', 'Great Sage', 'Overflowing Talent' ,'None'],
     'stats' : {
         'Str' : undefined,
         'Def' : undefined,
@@ -31,4 +31,12 @@ const getClass = (char) => {
     console.log(`Unique Skill : ${chara.uniqueSkill[getRandomChara(chara.uniqueSkill)]}`);
 }
 
+const getStats = () => {
+    console.log('Your starting character stats :');
+    for (let stat in chara.stats){
+        console.log(stat + ' : ' + randomStats());
+    }
+}
+
 getClass(chara);
+getStats();
