@@ -19,4 +19,16 @@ const randomStats = () => Math.floor(Math.random() * 20);
 
 const getRandomChara = (arr) => {
     let num = Math.floor(Math.random() * arr.length);
+    return num;
 }
+
+const getClass = (char) => {
+    console.log(`Job : ${chara.advenJob[getRandomChara(chara.advenJob)]}`);
+    console.log(`Weapon : ${chara.weapon[getRandomChara(chara.weapon)]}`);
+    console.log(`Magic Element : ${chara.magicElem[getRandomChara(chara.magicElem)]}`);
+    console.log(`Passive Skill : ${chara.passiveSkill[getRandomChara(chara.passiveSkill)]}`);
+    console.log(`Active Skill : ${chara.activeSkill[getRandomChara(chara.activeSkill)]}`);
+    console.log(`Unique Skill : ${chara.uniqueSkill[getRandomChara(chara.uniqueSkill)]}`);
+}
+
+getClass(chara);
